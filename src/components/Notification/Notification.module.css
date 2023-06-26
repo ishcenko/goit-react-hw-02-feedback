@@ -1,7 +1,7 @@
 .notification {
   align-self: center;
   text-align: center;
-  width: 360px;
-  padding: 40px;
-  font-weight: bold;
+  width: 250px;
+  /* padding: 40px; */
+  /* font-weight: bold; */
 }

@@ -56,9 +56,6 @@ export class App extends Component {
         ) : (
           <Notification message="There is no feedback" />
         )}
-        {totalFeedback > 0 && (
-          <Notification message="Thank you for your feedback!" />
-        )}
       </div>
     );
   }

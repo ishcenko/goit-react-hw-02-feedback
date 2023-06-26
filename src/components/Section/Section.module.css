@@ -1,12 +1,20 @@
 .titles {
-  align-self: center;
-  width: 360px;
-  padding: 40px;
+  align-self: flex-start;
+  font-size: 26px;
+  /* width: 360px; */
+  /* padding: 40px; */
 }
 
 .title {
-  margin-bottom: 18px;
-  text-align: center;
+  margin-bottom: 16px;
+  padding-left: 25px;
+  padding-top: 25px;
+  text-align: start;
   align-self: center;
-  font-weight: bold;
+}
+p {
+  font-size: 24px;
+  display: flex;
+  gap: 16px;
+  padding-left: 25px;
 }
