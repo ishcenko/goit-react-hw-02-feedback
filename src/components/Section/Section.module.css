@@ -1,0 +1,12 @@
+.titles {
+  align-self: center;
+  width: 360px;
+  padding: 40px;
+}
+
+.title {
+  margin-bottom: 18px;
+  text-align: center;
+  align-self: center;
+  font-weight: bold;
+}

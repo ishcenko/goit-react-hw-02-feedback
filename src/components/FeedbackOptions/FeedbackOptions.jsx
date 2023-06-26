@@ -1,21 +1,21 @@
+import css from './FeedbackOptions.module.css';
 import PropTypes from 'prop-types';
-import { Button } from './FeedbackOptions.styled';
 
-export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  return Object.keys(options).map(option => {
-    return (
-      <Button
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
+  <div className={css.btns}>
+    {options.map(option => (
+      <button
         key={option}
-        type="button"
-        name={option}
-        onClick={onLeaveFeedback}
+        className={css.btn}
+        onClick={() => onLeaveFeedback(option)}
       >
-        {option.toUpperCase()}
-      </Button>
-    );
-  });
-};
+        {option}
+      </button>
+    ))}
+  </div>
+);
 
 FeedbackOptions.propTypes = {
-  onLeaveFeedback: PropTypes.func,
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
 };
